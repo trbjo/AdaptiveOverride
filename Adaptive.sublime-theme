@@ -16,7 +16,7 @@
   	"indent": 15,
   	"layer0.opacity": 1.0,
   	"layer0.tint": ["background", 0.8],
-  	"row_padding": [ -2, 4, -2, 3],
+  	"row_padding": [ -2, 3, -2, 3],
   },
 
   {
@@ -44,18 +44,6 @@
   	"fg": ["foreground", 0.85],
 
   },
-
-
-
-
-
-
-
-// {
-//     "class": "sidebar_label",
-//     "parents": [{"class": "tree_row","attributes": ["selected"]}],
-//     "color": [255, 255, 255] // 03
-// },
 
 // sidebar content
 {
@@ -156,8 +144,6 @@
 	"class": "vcs_branch_icon",
 	"layer0.tint": ["foreground", 0.9],
 },
-
-
 
 
 {
@@ -406,9 +392,6 @@
 	"layer0.tint": "#FBFCFD",
 },
 
-
-
-
 {
 	"class": "quick_panel_row",
 	"attributes": ["selected"],
@@ -504,6 +487,16 @@
 	"class": "tabset_control",
 	"content_margin": [-5, 0, 0, 0],
 	"tab_height": 26,
+},
+
+{
+	"class": "scroll_tabs_left_button",
+	"content_margin": 0,
+},
+
+{
+	"class": "scroll_tabs_right_button",
+	"content_margin": 0,
 },
 
 {
