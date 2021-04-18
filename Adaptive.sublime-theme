@@ -15,7 +15,7 @@
   	"indent_offset": 6,
   	"indent": 15,
   	"layer0.opacity": 1.0,
-  	"layer0.tint": ["background", 0.8],
+  	"layer0.tint": ["background", 0.6],
   	"row_padding": [ -2, 3, -2, 3],
   },
 
@@ -51,12 +51,6 @@
 	"layer0.opacity": 1.0,
 	"layer0.tint": ["foreground", 0.8],
 },
-
-// {
-// 	"class": "icon_file_type",
-// 	"layer0.opacity": 1.0,
-// 	"layer0.tint": ["foreground", 0.8],
-// },
 
 {"class": "icon_folder", "content_margin": -2, },
 {"class": "icon_folder_loading", "content_margin": -2 },
@@ -237,17 +231,14 @@
 	"color_scheme_tint_2": ["background", 195, 210, 220, 0.05],
 },
 
-
 {
 	"class": "text_line_control",
 	"parents": [{"class": "overlay_control"} ],
 	"layer0.texture": "",
 	"layer0.opacity": 0.0,
-	// "layer1.tint": "#707a8c",
 	"layer1.inner_margin": [0, 0, 0, 0 ],
 	"content_margin": [22, 7, 10, 4 ]
 },
-
 
 {
 	"class": "icon_button_group",
@@ -371,8 +362,6 @@
 	"parents": [{"class": "window", "attributes": ["file_light"]}],
 	"layer0.tint": "#FBFCFD",
 },
-
-
 
 {
 	"class": "quick_panel_row",
