@@ -15,7 +15,7 @@
   	"indent_offset": 6,
   	"indent": 15,
   	"layer0.opacity": 1.0,
-  	"layer0.tint": ["background", 0.6],
+  	"layer0.tint": ["background", 0.5],
   	"row_padding": [ -2, 3, -2, 3],
   },
 
