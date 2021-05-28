@@ -236,8 +236,7 @@
 	"parents": [{"class": "overlay_control"} ],
 	"layer0.texture": "",
 	"layer0.opacity": 0.0,
-	"layer1.inner_margin": [0, 0, 0, 0 ],
-	"content_margin": [22, 7, 10, 4 ]
+	"content_margin": [12, 7, 10, 4 ]
 },
 
 {
@@ -309,7 +308,7 @@
 {
 	"class": "quick_panel",
 	"parents": [{"class": "overlay_control"} ],
-	"row_padding": [24, 8 ],
+	"row_padding": [16, 5 ],
 	"layer0.tint": "var(--background)",
 	"layer0.opacity": 1
 },
