@@ -279,7 +279,7 @@
 	"layer1.texture": "AdaptiveOverride/assets/overlay-border.png",
 	"layer1.inner_margin": [15, 35, 15, 25 ],
 	"layer1.opacity": 1,
-	"layer1.tint": [0,0,0, 0.3],
+	"layer1.tint": [0,0,0, 0.1],
 	"layer2.texture": "AdaptiveOverride/assets/overlay-bg.png",
 	"layer2.inner_margin": [15, 35, 15, 25 ],
 	"layer2.opacity": 1,
