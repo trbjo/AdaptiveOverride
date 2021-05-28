@@ -22,7 +22,7 @@
   {
   	"class": "tree_row",
   	"attributes": ["selected"],
-  	"layer0.tint": ["foreground", 0.07],
+		"layer0.tint": [ 122, 122, 122, 0.07],
   },
 
   {
