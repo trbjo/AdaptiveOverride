@@ -214,9 +214,9 @@
 			"class": "panel_control output_panel",
 			"content_margin": [
 				0,
-				-3,
+				-2,
 				0,
-				-3
+				-4
 			],
 		},
 		{
