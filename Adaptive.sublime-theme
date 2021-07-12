@@ -512,7 +512,7 @@
 					]
 				}
 			],
-			"layer1.tint": "#25292B",
+			"layer1.tint": "#1F242B",
 			"layer1.opacity": 1.0,
 		},
 		{
@@ -646,7 +646,7 @@
 					]
 				}
 			],
-			"layer2.tint": "#25292B",
+			"layer2.tint": "#1F242B",
 		},
 
 
@@ -711,7 +711,7 @@
 					]
 				}
 			],
-			"layer0.tint": "#25292B",
+			"layer0.tint": "#1F242B",
 		},
 
 		{
@@ -752,7 +752,7 @@
 					]
 				}
 			],
-			"layer0.tint": "#25292B",
+			"layer0.tint": "#1F242B",
 		},
 		{
 			"class": "quick_panel_row",
@@ -785,7 +785,7 @@
 					]
 				}
 			],
-			"layer0.tint": "#25292B",
+			"layer0.tint": "#1F242B",
 		},
 		{
 			"class": "quick_panel_row",
