@@ -545,12 +545,25 @@
 		{
 			"class": "text_line_control",
 			"parents": [
-				{
-					"class": "overlay_control"
-				}
+				{"class": "window", "attributes": ["file_dark"]}, {"class": "overlay_control"}
 			],
 			"layer0.texture": "",
-			"layer0.tint": "#00ff00",
+			"layer0.tint": "#1F242B",
+			"content_margin": [
+				12,
+				7,
+				10,
+				4
+			]
+		},
+
+		{
+			"class": "text_line_control",
+			"parents": [
+				{"class": "window", "attributes": ["file_light"]}, {"class": "overlay_control"}
+			],
+			"layer0.texture": "",
+			"layer0.tint": "#FBFCFD",
 			"content_margin": [
 				12,
 				7,
