@@ -545,7 +545,7 @@
 		{
 			"class": "text_line_control",
 			"parents": [
-				{"class": "window", "attributes": ["file_dark"]}, {"class": "overlay_control"}
+				{"class": "window", "attributes": ["file_medium_dark"]}, {"class": "overlay_control"}
 			],
 			"layer0.texture": "",
 			"layer0.tint": "#1F242B",
