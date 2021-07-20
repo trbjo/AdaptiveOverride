@@ -977,11 +977,7 @@
 		{
 			"class": "tab_label",
 			"font.face": "SF Pro Display Medium",
-			"font.size": 13,
-			"fg": [
-				"foreground",
-				0.9
-			],
+			"font.size": 13
 		},
 		{
 			"class": "tab_label",
