@@ -612,7 +612,6 @@
 			"layer0.tint": "#000",
 			"layer1.texture": "AdaptiveOverride/assets/overlay-border.png",
 			"layer1.inner_margin": [ 15, 0, 15, 20 ],
-			"layer1.opacity": 0.3,
 			"layer1.tint": "#000",
 			"layer2.texture": "AdaptiveOverride/assets/overlay-bg.png",
 			"layer2.inner_margin": [ 15, 0, 15, 20 ],
@@ -630,12 +629,14 @@
 					]
 				}
 			],
+			"layer1.opacity": 1.0,
 			"layer2.tint": "#1E242B",
 		},
 
 
 		{
 			"class": "overlay_control",
+			"layer1.opacity": 0.2,
 			"parents": [
 				{
 					"class": "window",
