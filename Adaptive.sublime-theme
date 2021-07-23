@@ -512,7 +512,7 @@
 					]
 				}
 			],
-			"layer1.tint": "#1F242B",
+			"layer1.tint": "#1E242B",
 			"layer1.opacity": 1.0,
 		},
 		{
@@ -542,13 +542,11 @@
 			],
 		},
 
+
 		{
 			"class": "text_line_control",
-			"parents": [
-				{"class": "window", "attributes": ["file_medium_dark"]}, {"class": "overlay_control"}
-			],
+			"parents": [{"class": "overlay_control"} ],
 			"layer0.texture": "",
-			"layer0.tint": "#1F242B",
 			"content_margin": [
 				12,
 				7,
@@ -560,16 +558,19 @@
 		{
 			"class": "text_line_control",
 			"parents": [
+				{"class": "window", "attributes": ["file_medium_dark"]}, {"class": "overlay_control"}
+			],
+			"layer0.texture": "",
+			"layer0.tint": "#1E242B",
+		},
+
+		{
+			"class": "text_line_control",
+			"parents": [
 				{"class": "window", "attributes": ["file_light"]}, {"class": "overlay_control"}
 			],
 			"layer0.texture": "",
 			"layer0.tint": "#FFFFFF",
-			"content_margin": [
-				12,
-				7,
-				10,
-				4
-			]
 		},
 
 		{
@@ -629,7 +630,7 @@
 					]
 				}
 			],
-			"layer2.tint": "#1F242B",
+			"layer2.tint": "#1E242B",
 		},
 
 
@@ -694,7 +695,7 @@
 					]
 				}
 			],
-			"layer0.tint": "#1F242B",
+			"layer0.tint": "#1E242B",
 		},
 
 		{
@@ -735,7 +736,7 @@
 					]
 				}
 			],
-			"layer0.tint": "#1F242B",
+			"layer0.tint": "#1E242B",
 		},
 		{
 			"class": "quick_panel_row",
@@ -768,7 +769,7 @@
 					]
 				}
 			],
-			"layer0.tint": "#1F242B",
+			"layer0.tint": "#1E242B",
 		},
 		{
 			"class": "quick_panel_row",
