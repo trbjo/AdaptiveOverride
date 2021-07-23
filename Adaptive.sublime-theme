@@ -214,9 +214,9 @@
 			"class": "panel_control output_panel",
 			"content_margin": [
 				0,
-				-2,
+				-3,
 				0,
-				-4
+				-3
 			],
 		},
 		{
@@ -318,12 +318,7 @@
 		},
 		{
 			"class": "status_bar",
-			"content_margin": [
-				0,
-				3,
-				0,
-				2
-			],
+			"content_margin": [7, 1, 7, 0],
 			"layer0.opacity": 1.0,
 			"layer1.opacity": 1.0,
 			"layer0.tint": [
@@ -337,10 +332,10 @@
 		{
 			"class": "status_bar",
 			"content_margin": [
+				7,
 				0,
-				2,
-				0,
-				2
+				7,
+				0
 			],
 			"attributes": [
 				"panel_visible"
