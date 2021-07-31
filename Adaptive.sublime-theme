@@ -318,7 +318,7 @@
 		},
 		{
 			"class": "status_bar",
-			"content_margin": [7, 1, 7, 0],
+			"content_margin": [0, 1, 0, 0],
 			"layer0.opacity": 1.0,
 			"layer1.opacity": 1.0,
 			"layer0.tint": [
@@ -331,15 +331,8 @@
 		},
 		{
 			"class": "status_bar",
-			"content_margin": [
-				7,
-				0,
-				7,
-				0
-			],
-			"attributes": [
-				"panel_visible"
-			],
+			"content_margin": 0,
+			"attributes": ["panel_visible"],
 			"layer1.opacity": 0.0,
 		},
 		{
@@ -910,13 +903,16 @@
 		------------------------------------------------------------------------- */
 		{
 			"class": "tabset_control",
+			"tab_height": 30,
 			"tab_overlap": 1,
-			"tab_width": 150,
+			"tab_width": 130,
+			"connector_height": 0,
+			"spacing": 0,
 			"content_margin": [
-				-5,
 				0,
 				0,
-				0
+				0,
+				1
 			],
 		},
 		{
@@ -947,37 +943,55 @@
 			"font.face": "SF Pro Display Medium",
 			"font.size": 13
 		},
+
+		// {
+		// 	"class": "tab_label",
+		// 	"parents": [
+		// 		{
+		// 			"class": "tab_control",
+		// 			"attributes": [
+		// 				"dirty",
+		// 				"selected"
+		// 			]
+		// 		}
+		// 	],
+		// 	"fg": [
+		// 		"accent",
+		// 		1.0
+		// 	],
+		// },
+
+		// {
+		// 	"class": "tab_label",
+		// 	"parents": [
+		// 		{
+		// 			"class": "tab_control",
+		// 			"attributes": [
+		// 				"dirty",
+		// 				"!selected"
+		// 			]
+		// 		}
+		// 	],
+		// 	"fg": [
+		// 		"accent",
+		// 		0.75
+		// 	],
+		// },
+
+
 		{
-			"class": "tab_label",
-			"parents": [
-				{
-					"class": "tab_control",
-					"attributes": [
-						"dirty",
-						"selected"
-					]
-				}
-			],
-			"fg": [
-				"accent",
-				1.0
-			],
+			"class": "tab_close_button",
+			"layer0.tint": "color(var(--foreground) a(0%))",
+			"parents": [{"class": "tab_control", "attributes": ["!dirty"] } ],
 		},
+
 		{
-			"class": "tab_label",
-			"parents": [
-				{
-					"class": "tab_control",
-					"attributes": [
-						"dirty",
-						"!selected"
-					]
-				}
-			],
-			"fg": [
-				"accent",
-				0.75
-			],
+			"class": "tab_close_button",
+			"layer0.opacity": 1.0,
+			"layer0.tint": "color(var(--foreground) a(85%))",
+			"parents": [{"class": "tab_control", "attributes": ["dirty"] } ]
 		},
+
+
 	]
 }
