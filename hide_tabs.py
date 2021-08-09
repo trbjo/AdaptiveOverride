@@ -8,5 +8,5 @@ class ViewTabs(sublime_plugin.EventListener):
             sublime.active_window().set_tabs_visible(True)
 
     def on_close(self, view):
-        if len(sublime.active_window().views()) == 1:
+        if len(sublime.active_window().views()) < 2:
             sublime.active_window().set_tabs_visible(False)
