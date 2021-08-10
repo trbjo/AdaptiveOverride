@@ -1,4 +1,15 @@
 {
+	"variables": {
+		"sheet_dark_modifier": "blend(var(tabset_dark_bg) 70%)",
+		"sheet_medium_dark_modifier": "blend(var(tabset_medium_dark_bg) 66%)",
+		"sheet_medium_modifier": "blend(var(tabset_medium_bg) 70%)",
+		"sheet_light_modifier": "blend(var(tabset_light_bg) 66%)",
+
+		// do not change the color of incactive input boxes
+		"text_widget_dark_modifier": "",
+		"text_widget_light_modifier": "",
+
+	},
 	"rules": [
 		/* Side Bar
 		------------------------------------------------------------------------- */
@@ -116,14 +127,7 @@
 		},
 		{
 			"class": "panel_control",
-			"parents": [
-				{
-					"class": "window",
-					"attributes": [
-						"file_dark"
-					]
-				}
-			],
+			"parents": [{"class": "window", "attributes": ["file_dark"] } ],
 			"layer1.tint": "var(dark_bg)",
 		},
 		{
@@ -224,7 +228,7 @@
 			"content_margin": [
 				0,
 				0,
-				-54,
+				-68,
 				-1
 			]
 		},
@@ -253,7 +257,8 @@
 					"class": "panel_control find_panel"
 				}
 			],
-			"outside_vspacing": 4,
+		   // "outside_vspacing": 1,
+			"outside_vspacing": 3,
 			"outside_hspacing": 0,
 			"inside_spacing": -1,
 		},
@@ -331,7 +336,7 @@
 		},
 		{
 			"class": "status_bar",
-			"content_margin": 0,
+			"content_margin": [0, -22,0,0],
 			"attributes": ["panel_visible"],
 			"layer1.opacity": 0.0,
 		},
@@ -508,14 +513,7 @@
 			"attributes": [
 				"selected"
 			],
-			"parents": [
-				{
-					"class": "window",
-					"attributes": [
-						"file_light"
-					]
-				}
-			],
+			"parents": [{"class": "window", "attributes": ["file_light"] } ],
 			"layer1.tint": "#FBFBFB",
 			"layer1.opacity": 1.0,
 		},
@@ -545,20 +543,14 @@
 
 		{
 			"class": "text_line_control",
-			"parents": [
-				{"class": "window", "attributes": ["file_medium_dark"]}, {"class": "overlay_control"}
-			],
-			"layer0.texture": "",
-			"layer0.tint": "#1E242B",
+			"parents": [{"class": "window", "attributes": ["file_light"] } ],
+			"color_scheme_tint_2": "#FBFBFB"
 		},
 
 		{
 			"class": "text_line_control",
-			"parents": [
-				{"class": "window", "attributes": ["file_light"]}, {"class": "overlay_control"}
-			],
-			"layer0.texture": "",
-			"layer0.tint": "#FBFBFB",
+			"parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
+			"color_scheme_tint_2": "#1E242B"
 		},
 
 		{
@@ -901,9 +893,22 @@
 		},
 		/* Tabs
 		------------------------------------------------------------------------- */
+
 		{
 			"class": "tabset_control",
-			"tab_height": 30,
+			"parents": [{"class": "window", "attributes": ["file_dark"] } ],
+			"layer0.tint": "#000000",
+		},
+		{
+			"class": "tabset_control",
+			"parents": [{"class": "window", "attributes": ["file_light"] } ],
+			"layer0.tint": "#d8d8d8",
+		},
+
+		{
+			"class": "tabset_control",
+			"layer0.opacity": 1.0,
+			"tab_height": 26,
 			"tab_overlap": 1,
 			"tab_width": 130,
 			"connector_height": 0,
@@ -932,11 +937,7 @@
 			"content_margin": 0,
 		},
 		{
-			"class": "tab_control",
-			"content_margin": [
-				15,
-				0
-			],
+			"class": "tab_control", "content_margin": [15, 0 ],
 		},
 		{
 			"class": "tab_label",
