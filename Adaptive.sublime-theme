@@ -258,7 +258,7 @@
 				}
 			],
 		   // "outside_vspacing": 1,
-			"outside_vspacing": 3,
+			"outside_vspacing": 2,
 			"outside_hspacing": 0,
 			"inside_spacing": -1,
 		},
