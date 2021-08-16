@@ -425,6 +425,23 @@
 			"content_margin": 0
 		},
 		{
+			"class": "icon_in_selection",
+			"layer0.tint": "var(--foreground)",
+		},
+		{
+			"class": "icon_in_selection",
+			"parents": [
+				{
+					"class": "icon_button_control",
+					"attributes": [
+						"selected"
+					]
+				}
+			],
+			"layer0.tint": "var(--accent)",
+			"layer0.opacity": 1.0,
+		},
+		{
 			"class": "icon_regex",
 			"layer0.tint": "var(--foreground)",
 		},
