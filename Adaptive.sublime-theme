@@ -409,10 +409,6 @@
 			"content_margin": 0
 		},
 		{
-			"class": "icon_in_selection",
-			"content_margin": 0
-		},
-		{
 			"class": "icon_use_buffer",
 			"content_margin": 0
 		},
