@@ -257,7 +257,7 @@
 					"class": "panel_control find_panel"
 				}
 			],
-		   // "outside_vspacing": 1,
+		    // "outside_vspacing": 1,
 			"outside_vspacing": 2,
 			"outside_hspacing": 0,
 			"inside_spacing": -1,
@@ -642,7 +642,16 @@
 			"layer2.tint": "#FBFBFB",
 		},
 
-
+		{
+			"class": "quick_panel",
+			"row_padding": [
+				32,
+				12
+			],
+			"parents": [{"class": "window", "attributes": ["file_light"] } ],
+			"layer0.tint": "#FBFBFB",
+			"layer0.opacity": 1
+		},
 
 		{
 			"class": "quick_panel",
@@ -650,7 +659,8 @@
 				32,
 				12
 			],
-			"layer0.tint": ["background", 1.0 ],
+			"parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
+			"layer0.tint": "#1E242B",
 			"layer0.opacity": 1
 		},
 		{
