@@ -38,18 +38,21 @@
                 3
             ],
         },
-        {
-            "class": "tree_row",
-            "attributes": [
-                "selected"
-            ],
-            "layer0.tint": [
-                122,
-                122,
-                122,
-                0.07
-            ],
-        },
+
+        {"class": "tree_row",
+        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0,
+        "layer0.tint": "#1C222C", },
+
+
+        {"class": "tree_row",
+        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0,
+        "layer0.tint": "#FFFFFF", },
+
+
         {
             "class": "tree_row",
             "attributes": [
