@@ -9,6 +9,15 @@
         "text_widget_dark_modifier": "",
         "text_widget_light_modifier": "",
 
+
+        "vcs_modified": "color(var(--bluish) a(0.8))",
+        "vcs_missing": "color(var(--redish) min-contrast(var(--background) 2.5))",
+        "vcs_staged": "color(var(--bluish) a(0.8))",
+        "vcs_added": "color(var(--greenish) min-contrast(var(--background) 2.5))",
+        "vcs_deleted": "color(var(--redish) min-contrast(var(--background) 2.5))",
+        "vcs_unmerged": "color(var(--orangish) min-contrast(var(--background) 2.5))",
+
+
     },
     "rules": [
         /* Side Bar
