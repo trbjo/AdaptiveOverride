@@ -59,7 +59,7 @@
         "parents": [{"class": "window", "attributes": ["file_light"]}],
         "attributes": ["selected"],
         "layer0.opacity": 1.0,
-        "layer0.tint": "#FFFFFF", },
+        "layer0.tint": "#e4e4e4", },
 
 
         {
