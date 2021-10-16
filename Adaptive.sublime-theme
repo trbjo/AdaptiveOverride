@@ -52,8 +52,14 @@
         "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
         "attributes": ["selected"],
         "layer0.opacity": 1.0,
-        "layer0.tint": "#1C222C", },
+        "layer0.tint": "#14181F", },
 
+
+        {"class": "tree_row",
+        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "attributes": ["hover"],
+        "layer0.opacity": 1.0,
+        "layer0.tint": "#14181F", },
 
         {"class": "tree_row",
         "parents": [{"class": "window", "attributes": ["file_light"]}],
@@ -62,16 +68,13 @@
         "layer0.tint": "#e4e4e4", },
 
 
-        {
-            "class": "tree_row",
-            "attributes": [
-                "hover"
-            ],
-            "layer0.tint": [
-                "foreground",
-                0.05
-            ],
-        },
+        {"class": "tree_row",
+        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "attributes": ["hover"],
+        "layer0.opacity": 1.0,
+        "layer0.tint": "#e4e4e4", },
+
+
         {
             "class": "sidebar_label",
             "font.size": 13,
@@ -567,7 +570,7 @@
                 "selected"
             ],
             "parents": [{"class": "window", "attributes": ["file_light"] } ],
-            "layer1.tint": "#FBFBFB",
+            "layer1.tint": "#FBFCFD",
             "layer1.opacity": 1.0,
         },
         {
@@ -597,7 +600,7 @@
         {
             "class": "text_line_control",
             "parents": [{"class": "window", "attributes": ["file_light"] } ],
-            "color_scheme_tint_2": "#FBFBFB"
+            "color_scheme_tint_2": "#FBFCFD"
         },
 
         {
@@ -679,7 +682,7 @@
                     ]
                 }
             ],
-            "layer2.tint": "#FBFBFB",
+            "layer2.tint": "#FBFCFD",
         },
 
         {
@@ -689,7 +692,7 @@
                 12
             ],
             "parents": [{"class": "window", "attributes": ["file_light"] } ],
-            "layer0.tint": "#FBFBFB",
+            "layer0.tint": "#FBFCFD",
             "layer0.opacity": 1
         },
 
@@ -753,7 +756,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "#FBFBFB",
+            "layer0.tint": "#FBFCFD",
         },
 
 
@@ -793,7 +796,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "#FBFBFB",
+            "layer0.tint": "#FBFCFD",
         },
         {
             "class": "quick_panel_row",
@@ -826,7 +829,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "#FBFBFB",
+            "layer0.tint": "#FBFCFD",
         },
         {
             "class": "quick_panel_row",
@@ -838,19 +841,19 @@
         {
             "class": "quick_panel_label",
             "match_fg": "var(--accent)",
-            "selected_match_fg": "#FBFBFB",
+            "selected_match_fg": "#FBFCFD",
             "fg": "var(--foreground)",
-            "selected_fg": "#FBFBFB",
+            "selected_fg": "#FBFCFD",
         },
         {
             "class": "quick_panel_path_label",
             "match_fg": "var(--accent)",
-            "selected_match_fg": "#FBFBFB",
+            "selected_match_fg": "#FBFCFD",
             "fg": [
                 "foreground",
                 0.7
             ],
-            "selected_fg": "#FBFBFB",
+            "selected_fg": "#FBFCFD",
         },
         {
             "class": "quick_panel_detail_label",
