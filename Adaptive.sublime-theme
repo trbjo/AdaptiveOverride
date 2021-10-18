@@ -976,14 +976,14 @@
             "layer0.opacity": 1.0,
             "tab_height": 26,
             "tab_overlap": 1,
-            "tab_width": 130,
+            "tab_width": 2000,
             "connector_height": 0,
             "spacing": 0,
             "content_margin": [
                 0,
                 0,
-                0,
-                1
+                -1,
+                0
             ],
         },
         {
