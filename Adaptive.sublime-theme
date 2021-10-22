@@ -77,6 +77,7 @@
 
         {
             "class": "sidebar_label",
+            "font.face": "SF Pro Display Regular",
             "font.size": 13,
             "fg": ["foreground", 0.95 ],
         },
