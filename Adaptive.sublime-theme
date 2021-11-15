@@ -562,7 +562,7 @@
                     ]
                 }
             ],
-            "layer1.tint": "#1E242B",
+            "layer1.tint": "#25292B",
             "layer1.opacity": 1.0,
         },
         {
@@ -607,7 +607,7 @@
         {
             "class": "text_line_control",
             "parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
-            "color_scheme_tint_2": "#1E242B"
+            "color_scheme_tint_2": "#25292B"
         },
 
         {
@@ -667,7 +667,7 @@
             ],
             "layer0.opacity": 0.4,
             "layer1.opacity": 1.0,
-            "layer2.tint": "#1E242B",
+            "layer2.tint": "#25292B",
         },
 
 
@@ -704,7 +704,7 @@
                 12
             ],
             "parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
-            "layer0.tint": "#1E242B",
+            "layer0.tint": "#25292B",
             "layer0.opacity": 1
         },
         {
@@ -744,7 +744,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "#1E242B",
+            "layer0.tint": "#25292B",
         },
 
         {
@@ -785,7 +785,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "#1E242B",
+            "layer0.tint": "#25292B",
         },
         {
             "class": "quick_panel_row",
@@ -818,7 +818,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "#1E242B",
+            "layer0.tint": "#25292B",
         },
         {
             "class": "quick_panel_row",
