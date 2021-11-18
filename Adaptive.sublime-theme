@@ -975,7 +975,7 @@
         {
             "class": "tabset_control",
             "layer0.opacity": 1.0,
-            "tab_height": 26,
+            "tab_height": 25,
             "tab_overlap": 1,
             "tab_width": 2000,
             "connector_height": 0,
