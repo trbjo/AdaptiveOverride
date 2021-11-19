@@ -10,3 +10,7 @@ class ViewTabs(sublime_plugin.EventListener):
     def on_close(self, view):
         if len(sublime.active_window().views()) < 2:
             sublime.active_window().set_tabs_visible(False)
+
+    def on_new_window_async(self, window):
+        if len(sublime.active_window().views()) < 2:
+            sublime.active_window().set_tabs_visible(False)
