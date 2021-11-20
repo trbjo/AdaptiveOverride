@@ -1,7 +1,7 @@
 {
     "variables": {
         "sheet_dark_modifier": "blend(var(tabset_dark_bg) 70%)",
-        "sheet_medium_dark_modifier": "blend(var(tabset_medium_dark_bg) 66%)",
+        "sheet_medium_dark_modifier": "blend(var(tabset_medium_dark_bg) 40%)",
         "sheet_medium_modifier": "blend(var(tabset_medium_bg) 70%)",
         "sheet_light_modifier": "blend(var(tabset_light_bg) 66%)",
 
