@@ -77,7 +77,6 @@
 
         {
             "class": "sidebar_label",
-            "font.face": "SF Pro Display Regular",
             "font.size": 13,
             "fg": ["foreground", 0.95 ],
         },
@@ -91,7 +90,6 @@
                     ]
                 }
             ],
-            "font.face": "SF Pro Display Medium",
             "fg": [
                 "foreground",
                 0.85
@@ -323,7 +321,6 @@
                     "class": "status_bar"
                 }
             ],
-            "font.face": "SF Pro Display Medium",
             "fg": [
                 "foreground",
                 0.9
@@ -339,7 +336,6 @@
                     "class": "panel_control"
                 }
             ],
-            "font.face": "SF Pro Display Medium",
             "fg": [
                 "foreground",
                 0.8
@@ -1008,7 +1004,6 @@
         },
         {
             "class": "tab_label",
-            "font.face": "SF Pro Display Medium",
             "fg": ["foreground", 0.85 ],
             "font.size": 13
         },
