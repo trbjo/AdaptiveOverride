@@ -78,11 +78,12 @@
         {
             "class": "sidebar_label",
             "font.face": "Inter Regular",
-            "font.size": 13,
+            "font.size": 12,
             "fg": ["foreground", 0.95 ],
         },
         {
             "class": "sidebar_label",
+            "font.size": 12.5,
             "parents": [
                 {
                     "class": "tree_row",
