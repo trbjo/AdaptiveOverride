@@ -710,14 +710,9 @@
         },
         {
             "class": "quick_panel",
-            "parents": [
-                {
-                    "class": "overlay_control"
-                }
-            ],
             "row_padding": [
                 16,
-                5
+                4
             ],
             "layer0.tint": "var(--background)",
             "layer0.opacity": 1
