@@ -83,11 +83,29 @@
         {
             "class": "sidebar_label",
             "font.size": 12.5,
+            "fg": [
+                "foreground",
+                0.85
+            ],
+        },
+
+        {
+            "class": "sidebar_heading",
+            "font.size": 12.5,
+            "fg": [
+                "foreground",
+                0.85
+            ],
+        },
+
+        {
+            "class": "sidebar_label",
+            "font.size": 12.5,
             "parents": [
                 {
                     "class": "tree_row",
-                    "attributes": [
-                        "expandable"
+                        "attributes": [
+                            "expandable"
                     ]
                 }
             ],
@@ -97,6 +115,7 @@
                 0.85
             ],
         },
+
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
@@ -114,7 +133,7 @@
             "layer0.opacity": 1.0,
             "layer0.tint": [
                 "foreground",
-                0.7
+                0.85
             ],
         },
 
