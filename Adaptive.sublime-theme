@@ -57,7 +57,7 @@
 
         {"class": "tree_row",
         "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
-        "attributes": ["hover"],
+        "attributes": ["selectable", "hover"],
         "layer0.opacity": 1.0,
         "layer0.tint": "#1F2324", },
 
@@ -70,7 +70,7 @@
 
         {"class": "tree_row",
         "parents": [{"class": "window", "attributes": ["file_light"]}],
-        "attributes": ["hover"],
+        "attributes": ["selectable", "hover"],
         "layer0.opacity": 1.0,
         "layer0.tint": "#e4e4e4", },
 
@@ -175,7 +175,7 @@
 
         {
             "class": "icon_file_type",
-            "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+            "parents": [{"class": "tree_row", "attributes": ["selectable", "hover"]}],
             "layer0.opacity": 0.9
         },
         {
