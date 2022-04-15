@@ -538,7 +538,24 @@
             "layer0.tint": "var(--foreground)",
         },
         {
+            "class": "icon_preserve_case",
+            "layer0.tint": "var(--foreground)",
+        },
+        {
             "class": "icon_whole_word",
+            "parents": [
+                {
+                    "class": "icon_button_control",
+                    "attributes": [
+                        "selected"
+                    ]
+                }
+            ],
+            "layer0.tint": "var(--accent)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "icon_preserve_case",
             "parents": [
                 {
                     "class": "icon_button_control",
