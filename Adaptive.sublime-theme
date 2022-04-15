@@ -77,7 +77,20 @@
         {
             "class": "close_button",
             "layer0.opacity": 0.0,
-            "attributes": ["!dirty"]
+            "attributes": ["!dirty"],
+        },
+
+        {
+            "class": "close_button",
+            "content_margin": 7,
+        },
+
+        {
+            "class": "close_button",
+            "layer0.texture": "AdaptiveOverride/assets/circle.png",
+            "attributes": ["dirty"],
+            "layer0.opacity": 1.0,
+            "layer0.tint": ["foreground", 0.85],
         },
 
         {
