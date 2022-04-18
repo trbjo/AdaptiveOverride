@@ -10,9 +10,9 @@
         "text_widget_light_modifier": "",
 
 
-        "vcs_modified": "color(var(--bluish) a(0.8))",
+        "vcs_modified": "color(var(--bluish))",
+        "vcs_staged": "color(var(--bluish))",
         "vcs_missing": "color(var(--redish) min-contrast(var(--background) 2.5))",
-        "vcs_staged": "color(var(--bluish) a(0.8))",
         "vcs_added": "color(var(--greenish) min-contrast(var(--background) 2.5))",
         "vcs_deleted": "color(var(--redish) min-contrast(var(--background) 2.5))",
         "vcs_unmerged": "color(var(--orangish) min-contrast(var(--background) 2.5))",
@@ -916,14 +916,42 @@
         /////////////////////
         // Auto completion //
         ////////////////////
+
         {
             "class": "table_row",
+            "parents": [
+                {
+                    "class": "auto_complete",
+                    "attributes": [
+                        "file_medium_dark"
+                    ]
+                },
+            ],
             "layer0.opacity": 1.0,
             "layer0.tint": [
                 "background",
                 0.15
             ],
         },
+        {
+            "class": "trigger_container",
+            "content_margin": [1,3]
+        },
+
+        {
+            "class": "table_row",
+            "parents": [
+                {
+                    "class": "auto_complete",
+                    "attributes": [
+                        "file_light"
+                    ]
+                },
+            ],
+            "layer0.opacity": 1.0,
+            "layer0.tint": "#F6F8FA",
+        },
+
         {
             "class": "table_row",
             "attributes": [
