@@ -1,6 +1,6 @@
 {
     "variables": {
-        "sheet_dark_modifier": "blend(var(tabset_dark_bg) 70%)",
+        "sheet_dark_modifier": "blend(var(tabset_dark_bg) 60%)",
         "sheet_medium_dark_modifier": "blend(var(tabset_medium_dark_bg) 40%)",
         "sheet_medium_modifier": "blend(var(tabset_medium_bg) 70%)",
         "sheet_light_modifier": "blend(var(tabset_light_bg) 66%)",
@@ -57,6 +57,19 @@
 
         {"class": "tree_row",
         "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "attributes": ["selectable", "hover"],
+        "layer0.opacity": 1.0,
+        "layer0.tint": "#1F2324", },
+
+        {"class": "tree_row",
+        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0,
+        "layer0.tint": "#1F2324", },
+
+
+        {"class": "tree_row",
+        "parents": [{"class": "window", "attributes": ["file_dark"]}],
         "attributes": ["selectable", "hover"],
         "layer0.opacity": 1.0,
         "layer0.tint": "#1F2324", },
@@ -203,33 +216,17 @@
         },
         {
             "class": "panel_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"] } ],
+            "parents": [
+                {
+                    "class": "window",
+                    "attributes": [
+                        "file_dark"
+                    ]
+                }
+            ],
             "layer1.tint": "var(dark_bg)",
         },
-        {
-            "class": "panel_control",
-            "parents": [
-                {
-                    "class": "window",
-                    "attributes": [
-                        "file_medium_dark"
-                    ]
-                }
-            ],
-            "layer1.tint": "var(medium_dark_bg)",
-        },
-        {
-            "class": "panel_control",
-            "parents": [
-                {
-                    "class": "window",
-                    "attributes": [
-                        "file_medium"
-                    ]
-                }
-            ],
-            "layer1.tint": "var(medium_bg)",
-        },
+
         {
             "class": "panel_control",
             "parents": [
@@ -260,11 +257,11 @@
                 {
                     "class": "window",
                     "attributes": [
-                        "file_medium_dark"
+                        "file_dark"
                     ]
                 }
             ],
-            "layer0.tint": "var(medium_dark_bg)",
+            "layer0.tint": "var(dark_bg)",
         },
         {
             "class": "panel_control output_panel",
@@ -606,11 +603,11 @@
                 {
                     "class": "window",
                     "attributes": [
-                        "file_medium_dark"
+                        "file_dark"
                     ]
                 }
             ],
-            "layer1.tint": "#25292B",
+            "layer1.tint": "#090A0B",
             "layer1.opacity": 1.0,
         },
         {
@@ -622,6 +619,7 @@
             "layer1.tint": "#FBFCFD",
             "layer1.opacity": 1.0,
         },
+
         {
             "class": "text_line_control",
             "color_scheme_tint_2": [
@@ -654,8 +652,8 @@
 
         {
             "class": "text_line_control",
-            "parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
-            "color_scheme_tint_2": "#25292B"
+            "parents": [{"class": "window", "attributes": ["file_dark"] } ],
+            "color_scheme_tint_2": "#0A0B0B"
         },
 
         {
@@ -696,7 +694,6 @@
             "layer0.tint": "#000",
             "layer1.texture": "AdaptiveOverride/assets/overlay-border.png",
             "layer1.inner_margin": [ 15, 0, 15, 20 ],
-            "layer1.tint": "#000",
             "layer2.texture": "AdaptiveOverride/assets/overlay-bg.png",
             "layer2.inner_margin": [ 15, 0, 15, 20 ],
             "layer2.opacity": 1,
@@ -709,13 +706,14 @@
                 {
                     "class": "window",
                     "attributes": [
-                        "file_medium_dark"
+                        "file_dark"
                     ]
                 }
             ],
             "layer0.opacity": 0.4,
             "layer1.opacity": 1.0,
-            "layer2.tint": "#25292B",
+            "layer1.tint": "var(dark_bg)",
+            "layer2.tint": "#0A0B0B",
         },
 
 
@@ -731,6 +729,7 @@
                     ]
                 }
             ],
+            "layer1.tint": "#000",
             "layer2.tint": "#FBFCFD",
         },
 
@@ -751,8 +750,8 @@
                 32,
                 12
             ],
-            "parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
-            "layer0.tint": "#25292B",
+            "parents": [{"class": "window", "attributes": ["file_dark"] } ],
+            "layer0.tint": "#0A0B0B",
             "layer0.opacity": 1
         },
         {
@@ -783,11 +782,11 @@
                 {
                     "class": "window",
                     "attributes": [
-                        "file_medium_dark"
+                        "file_dark"
                     ]
                 }
             ],
-            "layer0.tint": "#25292B",
+            "layer0.tint": "#0A0B0B",
         },
 
         {
@@ -818,6 +817,7 @@
             "layer0.inner_margin": 0,
             "layer0.opacity": 1
         },
+
         {
             "class": "quick_panel_row",
             "parents": [
@@ -830,6 +830,20 @@
             ],
             "layer0.tint": "#25292B",
         },
+
+        {
+            "class": "quick_panel_row",
+            "parents": [
+                {
+                    "class": "window",
+                    "attributes": [
+                        "file_dark"
+                    ]
+                }
+            ],
+            "layer0.tint": "#0A0B0B",
+        },
+
         {
             "class": "quick_panel_row",
             "parents": [
@@ -842,6 +856,7 @@
             ],
             "layer0.tint": "#FBFCFD",
         },
+
         {
             "class": "quick_panel_row",
             "parents": [
@@ -851,6 +866,7 @@
             ],
             "layer0.opacity": 1.0
         },
+
         {
             "class": "quick_panel_row",
             "parents": [
@@ -863,6 +879,20 @@
             ],
             "layer0.tint": "#25292B",
         },
+
+        {
+            "class": "quick_panel_row",
+            "parents": [
+                {
+                    "class": "overlay_control",
+                    "attributes": [
+                        "file_dark"
+                    ]
+                }
+            ],
+            "layer0.tint": "#0A0B0B",
+        },
+
         {
             "class": "quick_panel_row",
             "parents": [
@@ -875,6 +905,7 @@
             ],
             "layer0.tint": "#FBFCFD",
         },
+
         {
             "class": "quick_panel_row",
             "attributes": [
@@ -969,36 +1000,11 @@
             "selected_match_fg": "white",
             "fg_blend": true,
         },
-        // sublime cannot find purple in gruvbox
-        {
-            "class": "kind_label",
-            "parents": [
-                {
-                    "class": "kind_container kind_keyword"
-                }
-            ],
-            "color": "var(--redish)",
-        },
-        {
-            "class": "kind_container kind_keyword",
-            "parents": [
-                {
-                    "class": "auto_complete",
-                    "attributes": [
-                        "file_medium_dark"
-                    ]
-                },
-            ],
-            "layer0.opacity": 0.2,
-            "layer1.tint": "var(--redish)",
-            "layer1.opacity": 0.1,
-        },
-
         {
             "class": "minimap_control",
             "viewport_color": [
                 "foreground",
-                0.07
+                0.1
             ],
             "viewport_opacity": 0.8
         },
@@ -1037,8 +1043,9 @@
         {
             "class": "tabset_control",
             "parents": [{"class": "window", "attributes": ["file_dark"] } ],
-            "layer0.tint": "#000000",
+            "layer0.tint": "var(dark_bg)",
         },
+
         {
             "class": "tabset_control",
             "parents": [{"class": "window", "attributes": ["file_light"] } ],
