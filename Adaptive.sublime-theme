@@ -297,6 +297,17 @@
             ],
         },
         {
+            "class": "panel_control console_panel",
+            "content_margin": [
+                0,
+                -3,
+                0,
+                -4
+            ],
+        },
+
+
+        {
             "class": "panel_control find_panel",
             "content_margin": [
                 0,
