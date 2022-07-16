@@ -156,26 +156,13 @@
         // sidebar content
         {
             "class": "disclosure_button_control",
+            "content_margin": 0,
+        },
+
+        {
+            "layer0.tint": "var(--accent)",
             "layer0.opacity": 1.0,
-            "layer0.tint": [
-                "foreground",
-                0.85
-            ],
-        },
-
-
-
-        {
             "class": "icon_folder",
-            "content_margin": -2,
-        },
-
-
-        {
-            "class": "icon_file_type",
-            "layer0.tint": [255, 255, 255],
-            "layer0.opacity": 0.75,
-            "content_margin": [8, 8]
         },
 
         {
