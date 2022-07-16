@@ -33,7 +33,7 @@
         },
         {
             "class": "sidebar_tree",
-            "indent_offset": 14,
+            "indent_offset": 6,
             "indent": 15,
             "layer0.opacity": 1.0,
             "layer0.tint": [
@@ -41,7 +41,7 @@
                 0.5
             ],
             "row_padding": [
-                4,
+                8,
                 3,
                 -2,
                 3
