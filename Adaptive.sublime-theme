@@ -1060,6 +1060,19 @@
             "fg_blend": true,
         },
         {
+            "class": "auto_complete_label",
+            "parents": [
+                {
+                    "class": "auto_complete",
+                    "attributes": ["file_medium_dark"]
+                },
+
+            ],
+            "selected_fg": "color(var(--background))",
+            "selected_match_fg": "color(var(--background))",
+            "fg_blend": true,
+        },
+        {
             "class": "minimap_control",
             "viewport_color": [
                 "foreground",
