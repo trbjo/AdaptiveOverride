@@ -1,8 +1,8 @@
 import sublime
 import sublime_plugin
 
-class ViewTabs(sublime_plugin.EventListener):
 
+class ViewTabs(sublime_plugin.EventListener):
     def on_new_window(self, window):
         if len(window.sheets()) > 1:
             window.set_tabs_visible(True)
@@ -33,9 +33,14 @@ class ViewTabs(sublime_plugin.EventListener):
         if len(sublime.active_window().sheets()) < 2:
             sublime.active_window().set_tabs_visible(False)
 
-# class LineHighlight(sublime_plugin.ViewEventListener):
-#     def on_activated_async(self):
-#         self.view.settings().set("highlight_line", True)
 
-#     def on_deactivated_async(self):
-#         self.view.settings().set("highlight_line", False)
+class HideTabsCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        if self.window.num_groups() == 1:
+            self.window.set_tabs_visible(False)
+
+
+class ShowTabsCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        if self.window.num_groups() > 1:
+            self.window.set_tabs_visible(True)
