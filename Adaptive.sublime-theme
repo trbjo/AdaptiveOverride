@@ -1144,18 +1144,6 @@
             "content_margin": 0,
         },
         {
-            "class": "scroll_tabs_left_button",
-            "content_margin": 0,
-        },
-        {
-            "class": "scroll_tabs_right_button",
-            "content_margin": 0,
-        },
-        {
-            "class": "new_tab_button",
-            "content_margin": 0,
-        },
-        {
             "class": "tab_control", "content_margin": [15, 0 ],
         },
         {
