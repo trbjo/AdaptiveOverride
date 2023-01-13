@@ -903,7 +903,7 @@
         {
             "class": "quick_panel_label",
             "font.size": 12.5,
-        }
+        },
         {
             "class": "quick_panel_label",
             "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
