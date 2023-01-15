@@ -1102,7 +1102,7 @@
         {
             "class": "tab_label",
             "font.face": "Inter Medium",
-            "fg": ["foreground", 0.85 ],
+            "fg": ["foreground", 0.95 ],
             "font.size": 12.5
         },
 
