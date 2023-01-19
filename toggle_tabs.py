@@ -21,7 +21,7 @@ class ViewTabs(sublime_plugin.EventListener):
         else:
             window.set_tabs_visible(False)
 
-    def on_activated_async(self, view):
+    def on_activated(self, view):
         if len(sublime.active_window().sheets()) > 1:
             sublime.active_window().set_tabs_visible(True)
 
@@ -32,15 +32,3 @@ class ViewTabs(sublime_plugin.EventListener):
     def on_new_window_async(self, window):
         if len(sublime.active_window().sheets()) < 2:
             sublime.active_window().set_tabs_visible(False)
-
-
-class HideTabsCommand(sublime_plugin.WindowCommand):
-    def run(self):
-        if self.window.num_groups() == 1:
-            self.window.set_tabs_visible(False)
-
-
-class ShowTabsCommand(sublime_plugin.WindowCommand):
-    def run(self):
-        if self.window.num_groups() > 1:
-            self.window.set_tabs_visible(True)
