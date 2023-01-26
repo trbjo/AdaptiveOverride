@@ -477,7 +477,7 @@
         },
         {
             "class": "icon_context",
-            "content_margin": 0
+            "layer0.tint": "var(--foreground)",
         },
         {
             "class": "icon_highlight",
