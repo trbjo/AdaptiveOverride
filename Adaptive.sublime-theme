@@ -320,9 +320,9 @@
             "class": "panel_control find_panel",
             "content_margin": [
                 0,
-                0,
+                -1,
                 -68,
-                -1
+                -2
             ]
         },
         {
