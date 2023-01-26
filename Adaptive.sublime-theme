@@ -318,6 +318,17 @@
                 -2
             ]
         },
+
+         {
+            "class": "panel_control find_in_files_panel",
+            "content_margin": [
+                -4,
+                -3,
+                0,
+                0
+            ]
+        },
+
         {
             "class": "button_control",
             "parents": [
