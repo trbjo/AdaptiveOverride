@@ -162,15 +162,8 @@
 
         {
             "class": "icon_folder",
-            "layer0.tint": "var(--accent)",
-            "layer0.opacity": 1.0,
-        },
-
-        {
-            "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
-            "class": "icon_folder",
             "layer0.tint": "var(--bluish)",
-            "layer0.opacity": 1.0,
+            "layer0.opacity": 0.85,
         },
 
         {
