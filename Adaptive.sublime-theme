@@ -499,10 +499,6 @@
             "content_margin": 0
         },
         {
-            "class": "icon_use_gitignore",
-            "content_margin": 0
-        },
-        {
             "class": "icon_wrap",
             "content_margin": 0
         },
@@ -554,6 +550,19 @@
         },
         {
             "class": "icon_whole_word",
+            "parents": [
+                {
+                    "class": "icon_button_control",
+                    "attributes": [
+                        "selected"
+                    ]
+                }
+            ],
+            "layer0.tint": "var(--accent)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "icon_use_gitignore",
             "parents": [
                 {
                     "class": "icon_button_control",
