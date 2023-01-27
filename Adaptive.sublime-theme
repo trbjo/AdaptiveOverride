@@ -566,6 +566,19 @@
             "layer0.opacity": 1.0,
         },
         {
+            "class": "icon_context",
+            "parents": [
+                {
+                    "class": "icon_button_control",
+                    "attributes": [
+                        "selected"
+                    ]
+                }
+            ],
+            "layer0.tint": "var(--accent)",
+            "layer0.opacity": 1.0,
+        },
+        {
             "class": "icon_preserve_case",
             "parents": [
                 {
