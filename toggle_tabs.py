@@ -21,7 +21,7 @@ class ViewTabs(sublime_plugin.EventListener):
         else:
             window.set_tabs_visible(False)
 
-    def on_activated(self, view):
+    def on_activated_async(self, view):
         if len(sublime.active_window().sheets()) > 1:
             sublime.active_window().set_tabs_visible(True)
 
