@@ -7,10 +7,11 @@
 
         // do not change the color of incactive input boxes
         "text_widget_dark_modifier": "",
+        "text_widget_medium_dark_modifier": "",
         "text_widget_light_modifier": "",
 
 
-        "gruvbox": "#25292B",
+        "gruvbox": "#24282B",
         "vcs_modified": "color(var(--bluish))",
         "vcs_staged": "color(var(--bluish))",
         "vcs_missing": "color(var(--redish) min-contrast(var(--background) 2.5))",
@@ -27,22 +28,22 @@
             "class": "sidebar_container",
             "content_margin": [
                 0,
-                -33,
+                -10,
                 1,
                 0
             ],
         },
         {
             "class": "sidebar_tree",
-            "indent_offset": 6,
             "indent": 15,
             "layer0.opacity": 1.0,
             "layer0.tint": [
                 "background",
                 0.5
             ],
+            "indent_offset": 8,
             "row_padding": [
-                0,
+                8,
                 3,
                 -2,
                 3
@@ -173,7 +174,6 @@
             "layer0.opacity": 0.4,
             "content_margin": [8, 8]
         },
-
         {
             "class": "icon_file_type",
             "parents": [{"class": "tree_row", "attributes": ["selectable", "hover"]}],
@@ -295,8 +295,20 @@
                 0,
                 -3,
                 0,
-                -4
+                -3
             ],
+        },
+        {
+            "class": "panel_control output_panel",
+            "parents": [
+                {
+                    "class": "window",
+                    "attributes": [
+                    "file_medium_dark"
+                ]
+                }
+            ],
+            "layer0.tint": "var(medium_dark_bg)",
         },
         {
             "class": "panel_control console_panel",
@@ -342,6 +354,18 @@
                 -8
             ],
         },
+        {"class": "button_control",
+            "parents": [
+                {
+                    "class": "panel_control find_in_files_panel"
+                }
+            ],
+            "content_margin": [
+                3,
+                3
+            ],
+        },
+
         // search panel
         {
             "class": "dropdown_button_control",
@@ -375,7 +399,7 @@
             "font.face": "Inter Medium",
             "fg": ["foreground", 0.9 ],
             "shadow_color": "#00ff0000",
-            "font.size": 14,
+            "font.size": 12.5,
         },
         // bar label
         {
@@ -410,7 +434,7 @@
         },
         {
             "class": "status_bar",
-            "content_margin": [0, 1, 0, 0],
+            "content_margin": [0,  0, 0, -22],
             "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
             "layer0.tint": [
@@ -425,6 +449,7 @@
             "class": "status_bar",
             "attributes": ["panel_visible"],
             "layer1.opacity": 0.0,
+            "content_margin": [-2, -1, -2, -1],
         },
         {
             "class": "status_bar",
@@ -495,20 +520,16 @@
             "content_margin": 0
         },
         {
-            "class": "icon_use_buffer",
-            "content_margin": 0
-        },
-        {
-            "class": "icon_wrap",
-            "content_margin": 0
-        },
-        {
             "class": "panel_close_button",
             "content_margin": 0
         },
         {
             "class": "icon_in_selection",
             "layer0.tint": "var(--foreground)",
+        },
+        {
+            "class": "icon_wrap",
+            "content_margin": 0
         },
         {
             "class": "icon_in_selection",
@@ -523,6 +544,24 @@
             "layer0.tint": "var(--accent)",
             "layer0.opacity": 1.0,
         },
+        {
+            "class": "icon_use_buffer",
+            "layer0.tint": "var(--foreground)",
+        },
+        {
+            "class": "icon_use_buffer",
+            "parents": [
+                {
+                    "class": "icon_button_control",
+                    "attributes": [
+                        "selected"
+                    ]
+                }
+            ],
+            "layer0.tint": "var(--accent)",
+            "layer0.opacity": 1.0,
+        },
+
         {
             "class": "icon_regex",
             "layer0.tint": "var(--foreground)",
@@ -635,15 +674,8 @@
             "attributes": [
                 "selected"
             ],
-            "parents": [
-                {
-                    "class": "window",
-                    "attributes": [
-                        "file_dark"
-                    ]
-                }
-            ],
-            "layer1.tint": "#090A0B",
+            "parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
+            "layer1.tint": "var(gruvbox)",
             "layer1.opacity": 1.0,
         },
         {
@@ -655,18 +687,6 @@
             "layer1.tint": "#FBFCFD",
             "layer1.opacity": 1.0,
         },
-
-        {
-            "class": "text_line_control",
-            "color_scheme_tint_2": [
-                "background",
-                195,
-                210,
-                220,
-                0.05
-            ],
-        },
-
 
         {
             "class": "text_line_control",
@@ -689,6 +709,11 @@
             "class": "text_line_control",
             "parents": [{"class": "window", "attributes": ["file_light"] } ],
             "color_scheme_tint_2": "#FBFCFD"
+        },
+        {
+            "class": "text_line_control",
+            "parents": [{"class": "window", "attributes": ["file_medium_dark"] } ],
+            "color_scheme_tint_2": "var(gruvbox)"
         },
 
         {
