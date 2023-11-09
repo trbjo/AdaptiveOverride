@@ -26,22 +26,18 @@
         ------------------------------------------------------------------------- */
         {
             "class": "sidebar_container",
-            "content_margin": [
-                0,
-                -10,
-                1,
-                0
-            ],
+            "content_margin": [0, -10, 1, 0 ],
         },
         {
             "class": "sidebar_tree",
-            "indent": 15,
+            "indent": 17,
             "layer0.opacity": 1.0,
             "layer0.tint": [
                 "background",
                 0.5
             ],
-            "indent_offset": 8,
+            "indent_top_level": false,
+            "indent_offset": 0,
             "row_padding": [
                 8,
                 3,
@@ -434,7 +430,7 @@
         },
         {
             "class": "status_bar",
-            "content_margin": [0,  0, 0, -22],
+            "content_margin": [-2, 0, -2, -1],
             "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
             "layer0.tint": [
@@ -940,7 +936,13 @@
         {
             "class": "quick_panel_row",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "attributes": ["selected", ],
+            "attributes": ["selected"],
+            "layer0.tint": "var(--accent)",
+        },
+        {
+            "class": "quick_panel_row",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "attributes": ["selected"],
             "layer0.tint": "var(--accent)",
         },
 
@@ -971,10 +973,18 @@
             "selected_match_fg": "var(--background)",
             "selected_fg": "var(--background)",
         },
+         {
+            "class": "quick_panel_label",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "match_fg": "var(--accent)",
+            "fg": "var(--foreground)",
+            "selected_match_fg": "var(--background)",
+            "selected_fg": "var(--background)",
+        },
 
         {
             "class": "quick_panel_path_label",
-            "font.size": 11.3,
+            "font.size": 12,
         },
 
         {
@@ -989,6 +999,18 @@
         {
             "class": "quick_panel_path_label",
             "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+            "match_fg": "var(--accent)",
+            "selected_match_fg": "var(--foreground)",
+            "fg": [
+                "foreground",
+                0.8
+            ],
+            "selected_fg": "var(--foreground)",
+        },
+
+        {
+            "class": "quick_panel_path_label",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "match_fg": "var(--accent)",
             "selected_match_fg": "var(--foreground)",
             "fg": [
@@ -1087,32 +1109,6 @@
 
 
 
-        /////////////////////
-        // Scroll bar //
-        ////////////////////
-        {
-            "class": "puck_control",
-            "parents": [
-                {
-                    "class": "sidebar_container"
-                }
-            ],
-            "layer0.opacity": 0.0
-        },
-        // {
-        //  "class": "puck_control",
-        //  "parents": [{"class": "panel_control output_panel"}],
-        //  "layer0.opacity": 0.0
-        // },
-        {
-            "class": "scroll_track_control",
-            "parents": [
-                {
-                    "class": "sidebar_container"
-                }
-            ],
-            "layer0.opacity": 0.0
-        },
         /* Tabs
         ------------------------------------------------------------------------- */
 
